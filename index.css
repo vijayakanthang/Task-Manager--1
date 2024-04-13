@@ -1,0 +1,209 @@
+body{
+    background-image: url(bg.png);
+}
+
+
+select{
+    border: none;
+
+}
+
+.tbl{
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    color:white;
+    padding: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    justify-content: center;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+}
+
+#timeip::before{
+    color: #D1D5DB;
+}
+
+
+.input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(241, 195, 80);
+    border-radius: 3%;
+    height:70px;
+
+}
+
+.timer {
+    display: flex;
+    height: 200px;
+    width: 200px;
+    color:white;
+    border: gold 3px dashed;
+    border: 7px inset gold;
+    outline: rgb(159, 156, 156) 3px solid ;
+    border-radius: 100%;
+    align-items:center;
+    justify-content:space-around;
+    padding: 2px;
+    background-color:lightcyan;
+    box-shadow: rgba(255, 236, 64, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    
+}
+
+.dp{
+    display: flex;
+    align-items: center;
+}
+.tableborder{
+    display:inline-block;
+}
+
+.stopwatch {
+    position:static;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 400px;
+    width: 400px;
+}
+
+.digit {
+    text-decoration: wavy;
+    color: #111827;
+    font-size: xx-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.time_txt {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: wavy;
+    color: #111827;
+    font-size: xx-large;
+}
+
+#t_btn {
+    height: 70px;
+    width: 400;
+    padding: 3px;
+    padding-top: 15px;
+    padding-left: 10px;
+    justify-content:space-around;
+
+}
+
+.timerandtable {
+    display: flex;
+    padding:auto;
+}
+
+
+.button-38 {
+    background-color: #FFFFFF;
+    border: 0;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: #111827;
+    font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: .875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    padding: .75rem 1rem;
+    text-align: center;
+    text-decoration: none #D1D5DB solid;
+    text-decoration-thickness: auto;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-38:hover {
+    background-color: rgb(249, 250, 251);
+}
+
+.button-38:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+.button-38:focus-visible {
+    box-shadow: none;
+}
+
+
+#start {
+    background-color: rgb(24, 129, 24);
+    
+}
+
+#stop {
+    background-color: rgb(206, 42, 42);
+    
+}
+
+#reset {
+    background-color: rgb(50, 87, 190);
+    
+}
+
+
+/* Table*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+table {
+  background: #012B39;
+  border-radius: 0.25em;
+  border-collapse: collapse;
+  margin: 1em;
+}
+th {
+  border-bottom: 1px solid #364043;
+  color: #E2B842;
+  font-size: large;
+  font-weight: 600;
+  padding: 0.5em 1em;
+  text-align: left;
+}
+td {
+  color: #fff;
+  font-weight: 400;
+  padding: 0.65em 1em;
+  font-size:medium
+}
+.disabled td {
+  color: #4F5F64;
+}
+tbody tr {
+  transition: background 0.25s ease;
+}
+tbody tr:hover {
+  background: #014055;
+}
+
+
+#up{
+    background-color: rgb(48, 186, 45);
+}
+
+#del{
+    background-color: rgb(177, 37, 37);
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Hello</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="head">
+        <h1>Task Manager</h1>
+    </div>
+    <div class="input ">
+        <div class="button-38 ">
+                <select  id="task_ip" >
+                    <option value="" disabled selected> Task</option>
+                    <option value="Meeting">Meeting</option>
+                    <option value="Project">Project</option>
+                    <option value="Break">Break</option>
+                </select>
+        </div>
+        <input type="text" placeholder="Description" id="dip" class="button-38">
+        <input type="time" value="11:11" id="timeip" class="button-38">
+        <button type="submit" value="submit" class="button-38" onclick="insert()">submit</button>
+        <div class=" button-38 ">
+            <select id="tsk" class="custom-select" >
+                <option value="" disabled selected>Filter</option>
+                <option value="All" >All</option>
+                <option value="Meeting">Meeting</option>
+                <option value="Project">Project</option>
+                <option value="Break">Break</option>
+            </select>
+        </div>
+  
+    </div>
+
+    <div class="timerandtable">
+        <div class="tableborder">
+            <Table id="tb" class="tbl">
+                <thead>
+                    <tr class="tblh">
+                        <th>Task</th>
+                        <th>Description</th>
+                        <th>Time</th>
+                        <th colspan="4" style="padding-left: 100px";>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </Table>
+        </div>
+
+        <div class="stopwatch">
+            <div class="timer">
+                <span class="digit" id="hr">00</span>
+                <span class="time_txt">:</span>
+                <span class="digit" id="min">00</span>
+                <span class="time_txt">:</span>
+                <span class="digit" id="sec">00</span>
+            </div>
+
+            <div id="t_btn">
+                <button class="button-38" id='start'>Start</button>
+                <button class="button-38" id='stop'>Stop</button>
+                <button class="button-38" id='reset'>Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
